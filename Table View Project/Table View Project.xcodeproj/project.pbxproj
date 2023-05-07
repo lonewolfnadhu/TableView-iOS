@@ -18,6 +18,8 @@
 		A829AFEF2A08154A007655FE /* CustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829AFEE2A08154A007655FE /* CustomData.swift */; };
 		A829AFF42A08168B007655FE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829AFF22A08168B007655FE /* CustomCell.swift */; };
 		A829AFF52A08168B007655FE /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A829AFF32A08168B007655FE /* CustomCell.xib */; };
+		A829AFF72A08205A007655FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829AFF62A082059007655FE /* HomeViewController.swift */; };
+		A829AFF92A082170007655FE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A829AFF82A082170007655FE /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		A829AFEE2A08154A007655FE /* CustomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomData.swift; sourceTree = "<group>"; };
 		A829AFF22A08168B007655FE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		A829AFF32A08168B007655FE /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		A829AFF62A082059007655FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A829AFF82A082170007655FE /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +95,10 @@
 		A829AFEA2A081485007655FE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A829AFF62A082059007655FE /* HomeViewController.swift */,
 				A829AFD72A080FDD007655FE /* ViewController.swift */,
 				A829AFEC2A0814E0007655FE /* CustomViewController.swift */,
+				A829AFF82A082170007655FE /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,7 +186,9 @@
 			files = (
 				A829AFEF2A08154A007655FE /* CustomData.swift in Sources */,
 				A829AFD82A080FDD007655FE /* ViewController.swift in Sources */,
+				A829AFF92A082170007655FE /* DetailsViewController.swift in Sources */,
 				A829AFD42A080FDD007655FE /* AppDelegate.swift in Sources */,
+				A829AFF72A08205A007655FE /* HomeViewController.swift in Sources */,
 				A829AFED2A0814E0007655FE /* CustomViewController.swift in Sources */,
 				A829AFD62A080FDD007655FE /* SceneDelegate.swift in Sources */,
 				A829AFF42A08168B007655FE /* CustomCell.swift in Sources */,

@@ -13,7 +13,8 @@ class CustomViewController: UIViewController {
     
     let cellIdentifier = "CustomResuableCell"
     let cellNibName = "CustomCell"
-    
+    let segueValue = "CustomToDetailsVC"
+
     var customData:[CustomData] = [
         CustomData(title: "Wolverine", catchphrase: "To me, my X-Men.", imageName: "wolverine"),
         CustomData(title: "Batman", catchphrase: "A hero can be anyone.", imageName: "batman"),
@@ -55,5 +56,6 @@ extension CustomViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let value = customData[indexPath.row].imageName
         print(value)
+        self.performSegue(withIdentifier: segueValue, sender: self)
     }
 }

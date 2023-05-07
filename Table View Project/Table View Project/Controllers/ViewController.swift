@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let cellIdentifier = "ReusableCell"
+    let segueValue = "BasicToDetailsVC"
     
     var data:[Data] = [
         Data(name: "Batman"),
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -42,5 +44,13 @@ extension ViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.text = data[indexPath.row].name
         return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let value = data[indexPath.row].name
+        print(value)
+        self.performSegue(withIdentifier: segueValue, sender: self)
     }
 }
